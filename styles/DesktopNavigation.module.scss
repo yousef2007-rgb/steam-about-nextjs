@@ -1,0 +1,41 @@
+@import "./colors.scss";
+.DesktopNavigation-container {
+  margin-left: 50px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  @media (max-width: 750px) {
+    display: none;
+  }
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    * {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  .social-media-container {
+    margin-left: auto;
+    a {
+      &:hover {
+        * {
+          fill: $red;
+        }
+      }
+      svg {
+        width: 25px;
+        margin: 12px;
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}

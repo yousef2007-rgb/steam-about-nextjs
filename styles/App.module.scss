@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@500&family=Goldman&display=swap");
+.App {
+  max-width: 1800px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 900;
+  font-size: 0.9375rem;
+}
+* {
+  font-family: "Epilogue", sans-serif;
+  transition: color 300ms ease-out, background-color 300ms ease-out,
+    opacity 300ms ease-out, fill 300ms ease-out;
+  &:selector {
+    background-color: #e5202b;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

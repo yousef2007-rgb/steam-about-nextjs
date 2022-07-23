@@ -1,0 +1,321 @@
+@import "./colors.scss";
+.Intro-container {
+  overflow: hidden;
+  position: relative;
+  max-height: 750px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 64px),
+    calc(100% - 64px) 100%,
+    0 100%
+  );
+  box-sizing: initial;
+  video {
+    filter: invert(1);
+  }
+  h1 {
+    margin: 0;
+  }
+}
+.Intro-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 12px;
+  max-width: 1200px;
+  margin: 0 auto !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Intro-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: fit-content;
+  height: min-content !important;
+  height: auto;
+  flex: 1;
+  h1 {
+    font-size: 5vw;
+    font-family: "Goldman", cursive !important;
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto auto 0;
+    border-bottom: 15px solid $red;
+    @media (max-width: 530px) {
+      font-size: 30px;
+    }
+    &::after{
+      content: "steam";
+      animation-name: typing;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+  }
+  .pages-container {
+    margin: 50px auto auto;
+    @media (max-width: 530px) {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 20px;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      background-color: $red;
+      margin-left: 12px;
+      text-decoration: none;
+      clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
+      padding: 16px 42px;
+      svg {
+        width: 15px;
+        margin-left: 10px;
+        path {
+          fill: white;
+        }
+      }
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}
+
+@keyframes typing {
+  0%{
+    content: "steam";
+  }
+  1.3%{
+    content: "stea"
+  }
+  2.6%{
+    content:"ste"
+  }
+  3.9%{
+    content: "st";
+  }
+  5.2%{
+    content: "s";
+  }
+  6.5%{
+    content:"s"
+  }
+  7.8%{
+    content: "sc";
+  }
+  9.1%{
+    content:"sci"
+  }
+  10.4%{
+    content: "scie";
+  }
+  11.7%{
+    content:"scien"
+  }
+  13%{
+    content: "scienc";
+  }
+  14.3%{
+    content: "science";
+  }
+  15.6%{
+    content: "scienc";
+  }
+  16.9%{
+    content: "scien";
+  }
+  18.2%{
+    content: "scie";
+  }
+  19.5%{
+    content: "sci";
+  }
+  20.8%{
+    content:"sc";
+  }
+  22.1%{
+    content: "s";
+  }
+  23.4%{
+    content: " ";
+  }
+  24.7%{
+    content: "t";
+  }
+  26%{
+    content: "te";
+  }
+  27.3%{
+    content: "tec";
+  }
+  28.6%{
+    content: "tech";
+  }
+  29.9%{
+    content: "techn";
+  }
+  31.2%{
+    content:"techno"
+  }
+  32.5%{
+    content: "technol";
+  }
+  33.8%{
+    content: "technolo";
+  }
+  35.1%{
+    content: "technolog";
+  }
+  36.4%{
+    content: "technology";
+  }
+  37.7%{
+    content: "technolog";
+  }
+  39%{
+    content: "technolo";
+  }
+  40.3%{
+    content: "technol";
+  }
+  41.6%{
+    content: "techno";
+  }
+  42.9%{
+    content: "techn";
+  }
+  44.2%{
+    content:"tech"
+  }
+  45.5%{
+    content: "tec";
+  }
+  46.8%{
+    content: "te";
+  }
+  48.1%{
+    content: "t";
+  }
+  49.4%{
+    content: " ";
+  }
+  50.7%{
+    content: "e";
+  }
+  52%{
+    content: "en";
+  }
+  53.3%{
+    content: "eng";
+  }
+  54.6%{
+    content: "engi";
+  }
+  55.9%{
+    content: "engin";
+  }
+  57.2%{
+    content: "engine";
+  }
+  58.5%{
+    content: "enginee";
+  }
+  59.8%{
+    content: "engineer";
+  }
+  61.1%{
+    content: "engineeri";
+  }
+  62.4%{
+    content: "engineerin";
+  }
+  63.7%{
+    content: "engineering";
+  }
+  65%{
+    content: "engineerin";
+  }
+  66.3%{
+    content: "engineeri";
+  }
+  67.6%{
+    content: "engineer";
+  }
+  68.9%{
+    content: "enginee";
+  }
+  70.2%{
+    content: "engine";
+  }
+  71.5%{
+    content: "engin";
+  }
+  72.8%{
+    content: "engi";
+  }
+  74.1%{
+    content: "eng";
+  }
+  75.4%{
+    content: "en";
+  }
+  76.7%{
+    content: "e";
+  }
+  78%{
+    content: " ";
+  }
+  79.3%{
+    content: "a";
+  }
+  80.6%{
+    content: "ar";
+  }
+  81.9%{
+    content:"art"
+  }
+  83.2%{
+    content: "ar";
+  }
+  84.5%{
+    content: "a";
+  }
+  85.7%{
+    content: " ";
+  }
+  87%{
+    content: "m";
+  }
+  88.3%{
+    content: "ma";
+  }
+  89.6%{
+    content: "mat";
+  }
+  90.9%{
+    content: "math";
+  }
+  92.2%{
+    content: "mat";
+  }
+  93.5%{
+    content: "ma";
+  }
+  94.8%{
+    content: "m";
+  }
+  96.1%{
+    content: " ";
+  }
+}

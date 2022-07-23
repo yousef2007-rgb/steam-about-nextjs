@@ -1,0 +1,54 @@
+.About-container {
+  article{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  @media (max-width:900px) {
+    flex-direction: column !important;
+  }
+  }
+  * {
+    font-weight: 500;
+  }
+
+  h2 {
+    font-family: "Goldman", cursive !important;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+  section {
+    width: 50%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .team-image {
+    @media (max-width: 900px) {
+      margin: 0 auto auto !important;
+    }
+    img {
+      margin: auto;
+      width: 90%;
+      clip-path: polygon(
+        48px 0%,
+        100% 0,
+        100% calc(100% - 48px),
+        calc(100% - 48px) 100%,
+        0 100%,
+        0% 48px
+      );
+      max-width: 472px;
+    }
+  }
+  @media (max-width: 900px) {
+    flex-direction: column !important;
+    section {
+      width: 100%;
+      margin: auto auto 0;
+      max-width: 500px;
+    }
+  }
+}
