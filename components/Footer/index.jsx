@@ -1,7 +1,7 @@
 import styles from "../../styles/Footer.module.scss";
 const Footer = () => {
   return (
-    <div className={styles.Footer - container}>
+    <div className={styles.FooterContainer}>
       <a href="/" className={styles.logo}>
         STEAM
       </a>

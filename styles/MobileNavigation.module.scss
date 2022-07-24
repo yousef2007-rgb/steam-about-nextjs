@@ -30,7 +30,7 @@
       }
     }
   }
-  .back-drop {
+  .backDrop {
     background: rgba(0, 0, 0, 0.6);
     position: absolute;
     z-index: 1;
@@ -39,7 +39,7 @@
     width: 100vw;
     height: 100vh;
   }
-  .navigation-wrapper {
+  .navigationWrapper {
     background-color: $light-black;
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
     top: 0;
     padding: 10px 20px;
   }
-  .social-media-container {
+  .socialMediaContainer {
     margin-top: 40px;
     display: flex;
     a {

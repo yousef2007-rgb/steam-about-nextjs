@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import styles from "../../styles/Intro.module.scss";
 import { ReactComponent as ArrowDown } from "../../media/arrow-down-outline.svg";
@@ -28,17 +27,17 @@ export default function Intro(props) {
   };
 
   return (
-    <div className="Intro-container">
-      <div className="Intro-wrapper">
+    <div className={styles.IntroContainer}>
+      <div className={styles.IntroWrapper}>
         <Header />
-        <motion.div className="Intro-inner-wrapper">
+        <motion.div className={styles.IntroInnerWrapper}>
           <motion.h1 variants={headerVarient} initial="hidden" animate="show">
             {
               //content added in css
             }
           </motion.h1>
           <motion.div
-            className="pages-container"
+            className={styles.pagesContainer}
             variants={pagesContainerVarient}
             initial="hidden"
             animate="show"
@@ -50,7 +49,7 @@ export default function Intro(props) {
           </motion.div>
         </motion.div>
       </div>
-      <div className="Intro-background">
+      <div className={styles.IntroBackground}>
         <video
           autoPlay
           muted

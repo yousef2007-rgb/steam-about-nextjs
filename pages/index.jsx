@@ -1,4 +1,3 @@
-import React from "react";
 import Intro from "../components/Intro";
 import Article from "../components/Article";
 import TeamMembers from "../components/TeamMembers";

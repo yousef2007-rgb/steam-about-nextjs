@@ -1,5 +1,5 @@
 @import "./colors.scss";
-.TeamMembers-container {
+.TeamMembersContainer {
   padding: 20px;
   * {
     font-weight: 500;
@@ -11,7 +11,7 @@
     text-transform: uppercase;
     font-size: 30px;
   }
-  .cards-container {
+  .cardsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

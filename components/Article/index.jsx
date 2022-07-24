@@ -1,9 +1,10 @@
 import styles from "../../styles/Article.module.scss";
+import Image from "next/image";
 const Article = (props) => {
   return (
     <div
       id="About"
-      className={styles.About - container}
+      className={styles.AboutContainer}
       style={{
         "background-color": props.content.background,
       }}
@@ -13,12 +14,12 @@ const Article = (props) => {
           flexDirection: props.content.direction,
         }}
       >
-        <section className={styles.team - information}>
+        <section className={styles.teamInformation}>
           <h2>{props.content.title}</h2>
           <p>{props.content.paragraph}</p>
         </section>
-        <section className={styles.team - image}>
-          <img src={props.content.image} alt={props.content.title} />
+        <section className={styles.teamImage}>
+          <Image src={props.content.image} alt={props.content.title} />
         </section>
       </article>
     </div>

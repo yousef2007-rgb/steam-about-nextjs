@@ -7,6 +7,7 @@ import member5Pic from "../../media/member5.jpg";
 import member6Pic from "../../media/member6.jpg";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Image from "next/image";
 const TeamMembers = () => {
   const cardsContainerVarient = {
     hidden: {},
@@ -62,16 +63,16 @@ const TeamMembers = () => {
   );
   const members = [member1, member2, member3, member4, member5, member6];
   return (
-    <div className="TeamMembers-container">
+    <div className={styles.TeamMembersContainer}>
       <h2>Team Members:</h2>
       <motion.section
-        className="cards-container"
+        className={styles.cardsContainer}
         variants={cardsContainerVarient}
         animate="show"
         initial="hidden"
       >
         {members.map((member, index) => (
-          <motion.div className="card" variants={cardsVarient} key={index}>
+          <motion.div className={styles.card} variants={cardsVarient} key={index}>
             <img src={member.picture} alt="" />
             <h3>{member.name}</h3>
             <span>{member.age}</span>

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../../../styles/MobileNavigation.module.scss";
 import { ReactComponent as FacebookIcon } from "../../../../media/logo-facebook.svg";
 import { ReactComponent as InstagramIcon } from "../../../../media/logo-instagram.svg";
@@ -31,7 +30,7 @@ export default function MobileNavigation() {
   });
 
   return (
-    <motion.div className="MobileNavigation-container">
+    <motion.div className={styles.MobileNavigationContainer}>
       <MenuIcon
         className="menu-icon"
         onClick={() => {
@@ -42,7 +41,7 @@ export default function MobileNavigation() {
         }}
       />
       <motion.div
-        className="back-drop"
+        className={backDrop}
         ref={backDrop}
         initial={{
           opacity: 0,
@@ -52,7 +51,7 @@ export default function MobileNavigation() {
         }}
       >
         <motion.div
-          className="navigation-wrapper"
+          className={styles.navigationWrapper}
           initial={{
             x: "100vw",
           }}
@@ -66,7 +65,7 @@ export default function MobileNavigation() {
           }}
         >
           <CloseIcon
-            className="close-icon"
+            className={styles.closeIcon}
             onClick={() => setNavigationVisablity("hide")}
             whileTap={{
               scale: 0.9,
@@ -86,7 +85,7 @@ export default function MobileNavigation() {
               Contact us
             </a>
           </motion.nav>
-          <motion.div className="social-media-container">
+          <motion.div className={socialMediaContainer}>
             <motion.a
               href="https://www.facebook.com/S.T.E.A.Mteamracing"
               target="_blank"

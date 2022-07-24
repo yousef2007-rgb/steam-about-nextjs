@@ -1,4 +1,4 @@
-.About-container {
+.AboutContainer {
   article{
   max-width: 1000px;
   margin: 0 auto;
@@ -25,7 +25,7 @@
     flex-direction: column;
     margin: auto;
   }
-  .team-image {
+  .teamImage {
     @media (max-width: 900px) {
       margin: 0 auto auto !important;
     }

@@ -1,5 +1,5 @@
 @import "./colors.scss";
-.DesktopNavigation-container {
+.DesktopNavigationContainer {
   margin-left: 50px;
   flex: 1;
   display: flex;
@@ -21,7 +21,7 @@
       }
     }
   }
-  .social-media-container {
+  .socialMediaContainer {
     margin-left: auto;
     a {
       &:hover {

@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../../../styles/DesktopNavigation.module.scss";
 import { ReactComponent as FacebookIcon } from "../../../../media/logo-facebook.svg";
 import { ReactComponent as InstagramIcon } from "../../../../media/logo-instagram.svg";
@@ -20,7 +19,7 @@ export default function DesktopNavigation() {
   };
 
   return (
-    <motion.div className="DesktopNavigation-container">
+    <motion.div className={styles.DesktopNavigationContainer}>
       <motion.nav variants={container} initial="hidden" animate="show">
         <a to="/" variants={item}>
           About
@@ -35,7 +34,7 @@ export default function DesktopNavigation() {
           Contact us
         </a>
       </motion.nav>
-      <motion.div className="social-media-container">
+      <motion.div className={styles.socialMediaContainer}>
         <motion.a
           href="https://www.facebook.com/S.T.E.A.Mteamracing"
           target="_blank"
