@@ -1,15 +1,16 @@
 import styles from "../../styles/Footer.module.scss";
+import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styles.FooterContainer}>
-      <a href="/" className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         STEAM
-      </a>
+      </Link>
       <p>
         +<span>@2022 STEAM</span>
         <span>
           Made by{" "}
-          <a href="https://github.com/yousef2007-rgb/" target="_blank">
+          <a href="https://github.com/yousef2007-rgb/" target="blank">
             Yousef Aburadi
           </a>
         </span>
