@@ -1,9 +1,9 @@
 import styles from "../../../../styles/MobileNavigation.module.scss";
-import { ReactComponent as FacebookIcon } from "../../../../media/logo-facebook.svg";
-import { ReactComponent as InstagramIcon } from "../../../../media/logo-instagram.svg";
-import { ReactComponent as YoutubeIcon } from "../../../../media/logo-youtube.svg";
-import { ReactComponent as MenuIcon } from "../../../../media/menu-outline.svg";
-import { ReactComponent as CloseIcon } from "../../../../media/close-outline.svg";
+import FacebookIcon from "../../../../media/logo-facebook.svg";
+import InstagramIcon from "../../../../media/logo-instagram.svg";
+import YoutubeIcon from "../../../../media/logo-youtube.svg";
+import MenuIcon from "../../../../media/menu-outline.svg";
+import CloseIcon from "../../../../media/close-outline.svg";
 
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
@@ -85,7 +85,7 @@ export default function MobileNavigation() {
               Contact us
             </a>
           </motion.nav>
-          <motion.div className={socialMediaContainer}>
+          <motion.div className={styles.socialMediaContainer}>
             <motion.a
               href="https://www.facebook.com/S.T.E.A.Mteamracing"
               target="_blank"

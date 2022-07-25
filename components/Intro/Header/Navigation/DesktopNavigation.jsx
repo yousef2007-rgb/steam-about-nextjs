@@ -1,7 +1,7 @@
 import styles from "../../../../styles/DesktopNavigation.module.scss";
-import { ReactComponent as FacebookIcon } from "../../../../media/logo-facebook.svg";
-import { ReactComponent as InstagramIcon } from "../../../../media/logo-instagram.svg";
-import { ReactComponent as YoutubeIcon } from "../../../../media/logo-youtube.svg";
+import FacebookIcon from "../../../../media/logo-facebook.svg";
+import InstagramIcon from "../../../../media/logo-instagram.svg";
+import YoutubeIcon from "../../../../media/logo-youtube.svg";
 import { motion } from "framer-motion";
 export default function DesktopNavigation() {
   const container = {

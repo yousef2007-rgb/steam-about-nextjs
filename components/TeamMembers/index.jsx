@@ -1,4 +1,4 @@
-import "../../styles/TeamMembers.module.scss";
+import styles from "../../styles/TeamMembers.module.scss";
 import member1Pic from "../../media/member1.jpg";
 import member2Pic from "../../media/member2.jpg";
 import member3Pic from "../../media/member3.jpg";
@@ -72,8 +72,12 @@ const TeamMembers = () => {
         initial="hidden"
       >
         {members.map((member, index) => (
-          <motion.div className={styles.card} variants={cardsVarient} key={index}>
-            <img src={member.picture} alt="" />
+          <motion.div
+            className={styles.card}
+            variants={cardsVarient}
+            key={index}
+          >
+            <Image src={member.picture} alt="" />
             <h3>{member.name}</h3>
             <span>{member.age}</span>
             <span>{member.job}</span>

@@ -1,6 +1,6 @@
 import Header from "./Header";
 import styles from "../../styles/Intro.module.scss";
-import { ReactComponent as ArrowDown } from "../../media/arrow-down-outline.svg";
+import ArrowDown from "../../media/arrow-down-outline.svg";
 import { motion } from "framer-motion";
 export default function Intro(props) {
   const headerVarient = {
