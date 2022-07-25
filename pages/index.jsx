@@ -6,6 +6,7 @@ import teamImage from "../media/team-image.jpg";
 import communicationImage from "../media/communication-image.jpeg";
 import boothImage from "../media/booth-image.jpg";
 import f1inscoolsImage from "../media/f1inschools.png";
+import Head from "next/head";
 export default function HomePage() {
   const About = {
     title: "Team work",
@@ -33,6 +34,15 @@ export default function HomePage() {
   };
   return (
     <div>
+      <Head>
+        <title>steam homepage</title>
+        <link rel="shortcut icon" href="/src/media/icon.png" />
+        <meta content="steam racing team" />
+        <meta content="alredwan schools" />
+        <meta content="steam" />
+        <meta content="f1 schools" />
+        <meta content="f1 racing" />
+      </Head>
       <Intro content={"About us"} />
       <Article
         content={{

@@ -1,7 +1,6 @@
+import SocialMedia from "./SocialMedia";
+import Navigation from "./Navigation";
 import styles from "../../../../styles/DesktopNavigation.module.scss";
-import FacebookIcon from "../../../../media/logo-facebook.svg";
-import InstagramIcon from "../../../../media/logo-instagram.svg";
-import YoutubeIcon from "../../../../media/logo-youtube.svg";
 import { motion } from "framer-motion";
 export default function DesktopNavigation() {
   const container = {
@@ -20,40 +19,8 @@ export default function DesktopNavigation() {
 
   return (
     <motion.div className={styles.DesktopNavigationContainer}>
-      <motion.nav variants={container} initial="hidden" animate="show">
-        <a to="/" variants={item}>
-          About
-        </a>
-        <a to="/aboutcar" variants={item}>
-          About Our Car
-        </a>
-        <a
-          href="https://www.instagram.com/direct/t/340282366841710300949128239848356913819"
-          variants={item}
-        >
-          Contact us
-        </a>
-      </motion.nav>
-      <motion.div className={styles.socialMediaContainer}>
-        <motion.a
-          href="https://www.facebook.com/S.T.E.A.Mteamracing"
-          target="_blank"
-        >
-          <FacebookIcon />
-        </motion.a>
-        <motion.a
-          href="https://www.instagram.com/steamracing2022"
-          target="_blank"
-        >
-          <InstagramIcon />
-        </motion.a>
-        <motion.a
-          href="https://www.youtube.com/channel/UCEl-jLV6AGHn2xP1D9ONtgQ"
-          target="_blank"
-        >
-          <YoutubeIcon />
-        </motion.a>
-      </motion.div>
+      <Navigation container={container} item={item} />
+      <SocialMedia />
     </motion.div>
   );
 }

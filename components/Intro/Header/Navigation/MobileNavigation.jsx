@@ -4,7 +4,8 @@ import InstagramIcon from "../../../../media/logo-instagram.svg";
 import YoutubeIcon from "../../../../media/logo-youtube.svg";
 import MenuIcon from "../../../../media/menu-outline.svg";
 import CloseIcon from "../../../../media/close-outline.svg";
-
+import Navigation from "./Navigation";
+import SocialMedia from "./SocialMedia";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 export default function MobileNavigation() {
@@ -32,7 +33,7 @@ export default function MobileNavigation() {
   return (
     <motion.div className={styles.MobileNavigationContainer}>
       <MenuIcon
-        className="menu-icon"
+        className={styles.menuIcon}
         onClick={() => {
           setNavigationVisablity("show");
         }}
@@ -41,7 +42,7 @@ export default function MobileNavigation() {
         }}
       />
       <motion.div
-        className={backDrop}
+        className={styles.backDrop}
         ref={backDrop}
         initial={{
           opacity: 0,
@@ -71,40 +72,8 @@ export default function MobileNavigation() {
               scale: 0.9,
             }}
           />
-          <motion.nav variants={container} initial="hidden" animate="show">
-            <a to="/" variants={item}>
-              About
-            </a>
-            <a to="/aboutcar" variants={item}>
-              About Our Car
-            </a>
-            <a
-              href="https://www.instagram.com/direct/t/340282366841710300949128239848356913819"
-              variants={item}
-            >
-              Contact us
-            </a>
-          </motion.nav>
-          <motion.div className={styles.socialMediaContainer}>
-            <motion.a
-              href="https://www.facebook.com/S.T.E.A.Mteamracing"
-              target="_blank"
-            >
-              <FacebookIcon />
-            </motion.a>
-            <motion.a
-              href="https://www.instagram.com/steamracing2022"
-              target="_blank"
-            >
-              <InstagramIcon />
-            </motion.a>
-            <motion.a
-              href="https://www.youtube.com/channel/UCEl-jLV6AGHn2xP1D9ONtgQ"
-              target="_blank"
-            >
-              <YoutubeIcon />
-            </motion.a>
-          </motion.div>
+          <Navigation container={container} item={item} />
+          <SocialMedia />
         </motion.div>
       </motion.div>
     </motion.div>

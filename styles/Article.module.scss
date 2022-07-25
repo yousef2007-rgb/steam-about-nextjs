@@ -1,12 +1,12 @@
 .AboutContainer {
-  article{
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  @media (max-width:900px) {
-    flex-direction: column !important;
-  }
+  article {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    @media (max-width: 900px) {
+      flex-direction: column !important;
+    }
   }
   * {
     font-weight: 500;
@@ -31,7 +31,6 @@
     }
     img {
       margin: auto;
-      width: 90%;
       clip-path: polygon(
         48px 0%,
         100% 0,
@@ -40,7 +39,12 @@
         0 100%,
         0% 48px
       );
-      max-width: 472px;
+      width: 90% !important;
+      height: auto !important;
+      max-width: 472px !important;
+      max-height: none !important;
+      min-width: 0px !important;
+      min-height: 0px !important;
     }
   }
   @media (max-width: 900px) {

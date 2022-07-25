@@ -21,19 +21,19 @@
       }
     }
   }
-  svg {
-    width: 25px;
-    margin: 12px;
-    path {
-      fill: white;
-    }
-  }
   .socialMediaContainer {
     margin-left: auto;
     a {
       &:hover {
         * {
           fill: $red;
+        }
+      }
+      svg {
+        width: 25px;
+        margin: 12px;
+        path {
+          fill: white;
         }
       }
     }
