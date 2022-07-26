@@ -77,7 +77,7 @@ const TeamMembers = () => {
             variants={cardsVarient}
             key={index}
           >
-            <Image src={member.picture} alt="" />
+            <Image src={member.picture} alt={member.name} loading="lazy" />
             <h3>{member.name}</h3>
             <span>{member.age}</span>
             <span>{member.job}</span>

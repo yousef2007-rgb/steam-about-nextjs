@@ -19,7 +19,11 @@ const Article = (props) => {
           <p>{props.content.paragraph}</p>
         </section>
         <section className={styles.teamImage}>
-          <Image src={props.content.image} alt={props.content.title} />
+          <Image
+            src={props.content.image}
+            alt={props.content.title}
+            loading="lazy"
+          />
         </section>
       </article>
     </div>
