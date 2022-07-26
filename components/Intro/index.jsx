@@ -33,6 +33,7 @@ export default function Intro(props) {
         <IntroWrapper
           headerVarient={headerVarient}
           pagesContainerVarient={pagesContainerVarient}
+          content={props.content}
         />
       </div>
       <Background />

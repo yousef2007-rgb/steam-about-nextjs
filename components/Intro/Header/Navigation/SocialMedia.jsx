@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "../../../../styles/DesktopNavigation.module.scss";
-import FacebookIcon from "../../../../media/logo-facebook.svg";
-import InstagramIcon from "../../../../media/logo-instagram.svg";
-import YoutubeIcon from "../../../../media/logo-youtube.svg";
+import FacebookIcon from "../../../../media/facebookLogo.jsx";
+import InstagramIcon from "../../../../media/instagramLogo.jsx";
+import YoutubeIcon from "../../../../media/youtubeLogo.jsx";
 export default function SocialMedia({}) {
   return (
     <motion.div className={styles.socialMediaContainer}>

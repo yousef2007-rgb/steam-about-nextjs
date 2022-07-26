@@ -1,9 +1,6 @@
 import styles from "../../../../styles/MobileNavigation.module.scss";
-import FacebookIcon from "../../../../media/logo-facebook.svg";
-import InstagramIcon from "../../../../media/logo-instagram.svg";
-import YoutubeIcon from "../../../../media/logo-youtube.svg";
-import MenuIcon from "../../../../media/menu-outline.svg";
-import CloseIcon from "../../../../media/close-outline.svg";
+import MenuIcon from "../../../../media/menuIcon";
+import CloseIcon from "../../../../media/closeIcon";
 import Navigation from "./Navigation";
 import SocialMedia from "./SocialMedia";
 import { motion } from "framer-motion";

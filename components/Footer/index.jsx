@@ -3,6 +3,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className={styles.FooterContainer}>
+      <Link href="/" className={styles.logo}>
+        STEAM
+      </Link>
       <p>
         +<span>@2022 STEAM</span>
         <span>

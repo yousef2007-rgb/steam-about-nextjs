@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "../../styles/Intro.module.scss";
 import { motion } from "framer-motion";
 export default function Background({}) {
   return (

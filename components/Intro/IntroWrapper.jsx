@@ -1,7 +1,14 @@
 import React from "react";
-import ArrowDown from "../../media/arrow-down-outline.svg";
+import styles from "../../styles/Intro.module.scss";
+import ArrowDown from "../../media/arrowDownOutline.jsx";
 import { motion } from "framer-motion";
-export default function IntroWrapper({ headerVarient, pagesContainerVarient }) {
+
+export default function IntroWrapper({
+  headerVarient,
+  pagesContainerVarient,
+  content,
+}) {
+  console.log(ArrowDown);
   return (
     <motion.div className={styles.IntroInnerWrapper}>
       <motion.h1 variants={headerVarient} initial="hidden" animate="show">
@@ -16,7 +23,7 @@ export default function IntroWrapper({ headerVarient, pagesContainerVarient }) {
         animate="show"
       >
         <a href="#About">
-          {props.content}
+          {content}
           <ArrowDown />
         </a>
       </motion.div>
