@@ -6,7 +6,7 @@ import SocialMedia from "./SocialMedia";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 export default function MobileNavigation() {
-  const [navigationVisablity, setNavigationVisablity] = useState("show");
+  const [navigationVisablity, setNavigationVisablity] = useState("hide");
   const container = {
     hidden: { opacity: 0 },
     show: {
