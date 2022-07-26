@@ -8,13 +8,17 @@
   display: flex;
   align-items: center;
   .menuIcon {
-    width: 30px;
     margin-left: auto;
-    cursor: pointer;
+    svg {
+      width: 30px;
+      cursor: pointer;
+    }
   }
   .closeIcon {
-    width: 30px;
-    cursor: pointer;
+    svg {
+      width: 30px;
+      cursor: pointer;
+    }
   }
   nav {
     display: flex;
@@ -32,7 +36,7 @@
   }
   .backDrop {
     background: rgba(0, 0, 0, 0.6);
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
@@ -53,7 +57,6 @@
   }
   .socialMediaContainer {
     margin-top: 40px;
-    display: flex;
     a {
       &:hover {
         * {

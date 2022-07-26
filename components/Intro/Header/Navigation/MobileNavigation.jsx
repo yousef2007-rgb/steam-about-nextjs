@@ -6,7 +6,7 @@ import SocialMedia from "./SocialMedia";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 export default function MobileNavigation() {
-  const [navigationVisablity, setNavigationVisablity] = useState("hide");
+  const [navigationVisablity, setNavigationVisablity] = useState("show");
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -29,15 +29,14 @@ export default function MobileNavigation() {
 
   return (
     <motion.div className={styles.MobileNavigationContainer}>
-      <MenuIcon
+      <div
         className={styles.menuIcon}
         onClick={() => {
           setNavigationVisablity("show");
         }}
-        whileTap={{
-          scale: 0.9,
-        }}
-      />
+      >
+        <MenuIcon />
+      </div>
       <motion.div
         className={styles.backDrop}
         ref={backDrop}
@@ -62,15 +61,16 @@ export default function MobileNavigation() {
             staggerChildren: 0.2,
           }}
         >
-          <CloseIcon
+          <div
             className={styles.closeIcon}
             onClick={() => setNavigationVisablity("hide")}
-            whileTap={{
-              scale: 0.9,
-            }}
-          />
+          >
+            <CloseIcon />
+          </div>
           <Navigation container={container} item={item} />
-          <SocialMedia />
+          <div className={styles.socialMediaContainer}>
+            <SocialMedia />
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>
