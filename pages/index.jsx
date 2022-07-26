@@ -34,15 +34,6 @@ export default function HomePage() {
   };
   return (
     <div>
-      <Head>
-        <title>steam homepage</title>
-        <link rel="shortcut icon" href="/src/media/icon.png" />
-        <meta content="steam racing team" />
-        <meta content="alredwan schools" />
-        <meta content="steam" />
-        <meta content="f1 schools" />
-        <meta content="f1 racing" />
-      </Head>
       <Intro content={"About us"} />
       <Article
         content={{

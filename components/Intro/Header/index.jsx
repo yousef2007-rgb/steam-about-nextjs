@@ -7,9 +7,6 @@ import DesktopNavigation from "./Navigation/DesktopNavigation";
 export default function Header() {
   return (
     <div className={styles.HeaderContainer}>
-      <Link to="/" className={styles.logo}>
-        STEAM
-      </Link>
       <DesktopNavigation />
       <MobileNavigation />
     </div>

@@ -9,19 +9,19 @@ export default function SocialMedia({}) {
     <motion.div className={styles.socialMediaContainer}>
       <motion.a
         href="https://www.facebook.com/S.T.E.A.Mteamracing"
-        target="_blank"
+        target="blank"
       >
         <FacebookIcon />
       </motion.a>
       <motion.a
         href="https://www.instagram.com/s.t.e.a.m_racing/"
-        target="_blank"
+        target="blank"
       >
         <InstagramIcon />
       </motion.a>
       <motion.a
         href="https://www.youtube.com/channel/UCEl-jLV6AGHn2xP1D9ONtgQ"
-        target="_blank"
+        target="blank"
       >
         <YoutubeIcon />
       </motion.a>
