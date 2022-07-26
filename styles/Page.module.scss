@@ -6,15 +6,13 @@
   color: white;
   font-weight: 900;
   font-size: 0.9375rem;
-}
-* {
-  font-family: "Epilogue", sans-serif;
-  transition: color 300ms ease-out, background-color 300ms ease-out,
-    opacity 300ms ease-out, fill 300ms ease-out;
-  &:selector {
-    background-color: #e5202b;
+  background-color: black;
+  * {
+    font-family: "Epilogue", sans-serif;
+    transition: color 300ms ease-out, background-color 300ms ease-out,
+      opacity 300ms ease-out, fill 300ms ease-out;
+    &:selector {
+      background-color: #e5202b;
+    }
   }
-}
-html {
-  scroll-behavior: smooth;
 }

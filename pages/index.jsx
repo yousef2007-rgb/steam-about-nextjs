@@ -1,3 +1,4 @@
+import styles from "../styles/Page.module.scss";
 import Intro from "../components/Intro";
 import Article from "../components/Article";
 import TeamMembers from "../components/TeamMembers";
@@ -33,7 +34,7 @@ export default function HomePage() {
     direction: "row",
   };
   return (
-    <div>
+    <div className={styles.App}>
       <Intro content={"About us"} />
       <Article
         content={{

@@ -7,6 +7,9 @@ export default function Navigation({ container, item }) {
       <Link href="/" variants={item}>
         About
       </Link>
+      <Link href="/socialmedia" variants={item}>
+        SocialMedia
+      </Link>
     </motion.nav>
   );
 }

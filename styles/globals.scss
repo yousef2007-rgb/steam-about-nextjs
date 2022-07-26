@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Genos:wght@500&family=Goldman&display=swap");
 html,
 body {
-background-color:black;
-  padding: 0;
+  adding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -16,7 +15,6 @@ a {
 
 * {
   box-sizing: border-box;
-background-color:black
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,25 +23,9 @@ background-color:black
   }
   body {
     color: white;
-    background: black;
   }
 }
 
-.App {
-  max-width: 1800px;
-  margin: 0 auto;
-}
-* {
-  color: white;
-  font-weight: 900;
-  font-size: 0.9375rem;
-  font-family: "Epilogue", sans-serif;
-  transition: color 300ms ease-out, background-color 300ms ease-out,
-    opacity 300ms ease-out, fill 300ms ease-out;
-  &:selector {
-    background-color: #e5202b;
-  }
-}
 html {
   scroll-behavior: smooth;
 }
